@@ -55,7 +55,17 @@ public class CauchyDistribution extends AbstractContinuousDistribution {
     public double getMedian() {
         return median;
     }
-
+    
+    /**
+     * Access the mode.
+     *
+     * Mode is equal to median for Cauchy Distribution
+     * @return the mode for this distribution.
+     */
+    public double getMode() {
+        return getMedian();
+    }
+    
     /**
      * Access the scale parameter.
      *
